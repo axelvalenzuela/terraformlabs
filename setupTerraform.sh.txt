@@ -14,3 +14,5 @@ sudo pip3 install docker-compose
 docker --version
 accessPubKey=$(aws iam list-access-keys | grep KeyId | awk '{print $2}' | tr -d '"')
 export AWS_ACCESS_KEY_ID=$accessPubKey
+
+#comentarios
