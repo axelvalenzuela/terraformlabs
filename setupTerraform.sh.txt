@@ -6,6 +6,10 @@ sudo yum -y install terraform
 terraform --version
 mkdir terraform-AWSinfra && cd terraform-AWSinfra
 touch main.tf
+touch providers.tf
+touch locals.tf
+touch outputs.tf
+touch devCap.tfvars
 sudo yum install -y docker
 sudo usermod -a -G docker ec2-user
 id ec2-user
